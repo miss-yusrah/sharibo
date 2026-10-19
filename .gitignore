@@ -50,3 +50,8 @@ packages/client/reports/
 issue.md
 TODO.md
 skills-lock.json
+
+# Scratch output — never commit
+.tmp_*
+/check.txt
+contracts/clippy.json
