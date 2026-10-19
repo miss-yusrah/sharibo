@@ -1,6 +1,9 @@
 {
   "name": "sharibo",
   "version": "0.0.0",
+  "engines": {
+    "node": ">=22.22.2"
+  },
   "type": "module",
   "workspaces": [
     "circuits",
