@@ -98,6 +98,8 @@ store; the persistence boundary and versioning live in `app/src/lib/session.ts`.
 
 **Impact:** Because the contract rejects out-of-range values, there is no soundness gap (aliasing is not possible). The client-side range validation (`assertInField`) is purely a "better error message" fix — it fails the transaction client-side with a clear `InvalidInputError` before the user pays for a doomed transaction that would otherwise fail with an opaque on-chain error.
 
+_Note: this argument was recovered from a stray UTF-16LE scratch file (`check.txt`, committed in #640) and preserved here as UTF-8 — see issue #799._
+
 ## Property → code → test matrix
 
 | Property             | Enforcing code                                              | Test evidence                                                | Known limit                                                                                                                                     |
